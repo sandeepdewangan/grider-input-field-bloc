@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:loginwithbloc/src/blocs/provider.dart';
 // from project
 import '../../src/blocs/bloc.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    final bloc = Provider.of(context);
+
     return Container(
       margin: EdgeInsets.all(40.0),
       child: Column(
